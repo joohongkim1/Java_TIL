@@ -142,3 +142,21 @@ vc.calcPrice(10000);
 - HAS-A 관계(composition)
   - 한 클래스가 다른 클래스를 소유한 관계
   - ex) Student 가 Subject 를 포함한 관계
+
+
+
+#### 5. 다운 캐스팅과 instanceof
+
+1) 하위 클래스로 형 변환, 다운 캐스팅
+
+- 묵시적으로 상위 클래스 형 변환된 인스턴스가 원래 자료형(하위 클래스)으로 변환되어야 할 때 다운 캐스팅
+
+- 다운 캐스팅은 업 캐스팅과 달리 명시적으로 되어야 함.
+
+  ```java
+  Customer vc = new VipCustomer(); // 묵시적
+  VipCustomer vCustomer = (VipCustomer)vc; // 명시적
+  ```
+
+- 오버라이딩이 불가능한 경우 사용
+
