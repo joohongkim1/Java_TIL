@@ -1,4 +1,4 @@
-package Interfaceex;
+package interfaceex;
 
 public abstract class Calculator implements Calc {
 
