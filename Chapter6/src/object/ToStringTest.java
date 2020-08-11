@@ -1,6 +1,7 @@
 package object;
 
-class Book {
+// clone() 메서드를 사용하기 위해 Cloneable 명시
+class Book implements Cloneable{
 	String title;
 	String author;
 	
@@ -15,16 +16,27 @@ class Book {
 		return author + "," + title;
 	}
 	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	
+	
 }
 
 public class ToStringTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		
 		Book book = new Book("토지", "박경리");
 		
 		// 주소 출력
 		System.out.println(book);
+		
+		// 명시적으로 캐스팅
+		Book book2 = (Book)book.clone();
+		System.out.println(book2);
 		
 		// String 클래스에는 toString 이 정의되어 있다.
 		String str = new String("토지");

@@ -25,6 +25,13 @@ class Student {
 		}
 		return false;
 	}
+	
+	@Override
+	public int hashCode() {
+		return stuID;
+	}
+	
+	
 }
 public class EqualsTest {
 	
@@ -50,5 +57,16 @@ public class EqualsTest {
 		
 		System.out.println(Lee2.hashCode());
 		System.out.println(Lee.hashCode());
+		
+		Integer i1 = new Integer(100);
+		Integer i2 = new Integer(100);
+		
+		System.out.println(i1.equals(i2));
+		System.out.println(i1.hashCode());
+		System.out.println(i2.hashCode());
+		
+		// 角力 按眉狼 林家 蔼
+		System.out.println(System.identityHashCode(i1));
+		System.out.println(System.identityHashCode(i2));
 	}
 }
