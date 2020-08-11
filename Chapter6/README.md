@@ -114,3 +114,52 @@ Class c = Class.forName("java.lang.String"); // 동적 로딩, 런타임 때 바
 - 동적 로딩 : 컴파일 시에 데이터 타입이 모두 binding 되어 자료형이 로딩되는 것, `static loading` 이 아니라 실행 중에 데이터 타입을 알고 binding 되는 방식
 - 실행 시에 로딩되므로 경우에 따라 다른 클래스가 사용될 수 있어 유용함
 - 컴파일 타임에 체크 할 수 없으므로 해당 문자열에 대한 클래스가 없는 경우 예외 발생 가능
+
+
+
+### 3. String, Wrapper 클래스
+
+
+
+#### 1) String 클래스
+
+- 선언 
+
+  ```java
+  String str1 = new String("abc"); // 인스턴스로 생성됨, 힙에 allocation
+  String str2 = "abc"; // 상수풀에 있는 문자열을 가리킴
+  // 각각 다른 의미 -> 메모리 주소 비교 시 false
+  ```
+
+- String 은 immutable : 한 번 선언되거나 생성된 문자열은 변경 불가능
+
+  - String 클래스의 concat() 메서드 혹은 "+" 를 이용하여 String 을 연결하는 경우 문자열은 새로 생성(새로운 메모리가 생성)
+
+- StringBuilder 와 StringBuffer
+
+  - 가변적인 char[] 배열을 멤버변수로 가지고 있는 클래스
+  - 문자열을 변경하거나 연결하는 경우 사용하면 편리한 클래스
+  - StringBuffer 는 멀티쓰레드 프로그래밍에서 동기화(Synchronization)가 보장됨, Builder 는 동기화 지원이 안 됨. 가장 큰 차이점.
+  - 단일 쓰레드 프로그래밍에서는 StringBuilder 를 사용하는 것이 좋음
+  - toString() 메서드로 String 반환
+
+
+
+#### 2) Wrapper 클래스
+
+- 기본 자료형에 대한 클래스
+
+  | 기본형  | Wrapper 클래스 |
+  | :-----: | :------------: |
+  | boolean |    Boolean     |
+  |  byte   |      Byte      |
+  |  char   |   Character    |
+  |  short  |     Short      |
+  |   int   |    Integer     |
+  |  long   |      Long      |
+  |  float  |     Float      |
+  | double  |     Double     |
+
+
+
+- 기본 타입의 데이터를 객체로 포장해주는 클래스, 프로그램에 따라 기본 타입의 데이터를 객체로 취급해야 하는 경우가 있다. 
