@@ -50,7 +50,7 @@
     - 하나의 객체의 관리를 위해 선언된 인터페이스로 필요한 기본 메서드가 선언되어 있음
     - 하위에 List, Set 인터페이스가 있음
 
-    ![image-20200816142627800](C:\Users\wnghd\AppData\Roaming\Typora\typora-user-images\image-20200816142627800.png)
+    ![image-20200816142627800](C:\Users\wnghd\Downloads\Java\Java_TIL\images\collection.PNG)
 
   - Map 인터페이스
 
