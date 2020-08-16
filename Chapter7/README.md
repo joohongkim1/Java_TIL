@@ -38,22 +38,13 @@
 #### 1) 컬렉션 프레임워크란?
 
 - 프로그램 구현에 필요한 자료구조와 알고리즘을 구현해 놓은 라이브러리
-
 - java.util 패키지에 구현되어 있음
-
 - 개발에 소요되는 시간을 절약하고 최적화된 라이브러리를 사용할 수 있음
-
 - Collection 인터페이스와 Map 인터페이스로 구성됨
-
   - Collection 인터페이스
-
     - 하나의 객체의 관리를 위해 선언된 인터페이스로 필요한 기본 메서드가 선언되어 있음
     - 하위에 List, Set 인터페이스가 있음
-
-    ![image-20200816142627800](..\images\collection.PNG)
-
   - Map 인터페이스
-
     - 쌍으로 이루어진 객체를 관리하는데 필요한 여러 메서드가 선언되어 있음
     - Map 을 사용하는 객체는 key-value 쌍으로 되어 있고, key 는 중복 불가
     - Hashtable, HashMap, TreeMap 
@@ -88,5 +79,40 @@
     - LinkedList 의 경우 자료의 추가와 삭제에 들어가는 비용이 효율적이다.
     - 배열의 데이터 추가 및 삭제가 많지 않고, i 번째 데이터 검색에는 ArrayList 가 효율적
 
- 
+
+- Stack 구현
+
+	- LIFO : 맨 마지막에 추가된 요소가 가장 먼저 꺼내지는 자료구조
+	- ArrayList 나 LinkedList 로 구현 할 수 있음
+
+
+- Queue 구현
+
+	- FIFO : 먼저 저장된 자료가 먼저 꺼내지는 자료 구조
+	- 선착순, 대기열 등을 구현할 때 가장 많이 사용되는 자료 구조
+	- ArrayList 나 LinkedList 로 구현 할 수 있음
+
+
+
+#### 3) Set 인터페이스
+
+- 저장된 순서와 출력 순서는 다를 수 있음
+- 아이디, 주민번호, 사번 등 유일한 값이나 객체를 관리할 때 사용
+
+- Iterator 로 순회하기
+
+  - Collection 의 개체를 순회하는 인터페이스
+
+  - iterator() 메서드 호출
+
+    ```java
+    Iterator it = memberArrayList.iterator();
+    ```
+
+  - Iterator 에 선언된 메서드
+
+    - boolean hashNext() : 이후에 요소가 더 있는지를 체크하는 메서드
+    - E next() : 다음에 있는 요소를 반환
+
+
 
