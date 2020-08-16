@@ -13,5 +13,6 @@ public class GenericPrinterTest {
 		Plastic plastic = new Plastic();
 		plasticPrinter.setMaterial(plastic);
 		System.out.println(plasticPrinter.toString());
+		
 	}
 }	
