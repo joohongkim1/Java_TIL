@@ -144,6 +144,18 @@
 - 내부적으로 hash 방식으로 구현 됨
 - key 가 되는 객체는 객체의 유일성 여부를 알기 위해 equals() 와 hashCode() 메서드를 재정의
 
+##### 1) HashMap 클래스
+
+- Map 인터페이스를 구현한 클래스 중 가장 일반적으로 사용
+- 동기화를 제공하며, pair 자료를 쉽고 빠르게 관리할 수 있음
+
+##### 2) TreeMap 클래스
+
+- key 객체를 정렬하여 key-value 를 pair 로 관리하는 클래스
+- key 에 사용되는 클래스에 Comparable, Comparator 인터페이스를 구현
+- Java 의 많은 클래스들은 이미 Comparable 이 구현되어 있음. ex) Integer, String ..
+- 구현 된 클래스를 key 로 사용하는 경우는 구현할 필요 없음
+
 
 
 
