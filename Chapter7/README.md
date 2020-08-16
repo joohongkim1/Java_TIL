@@ -50,7 +50,7 @@
     - 하나의 객체의 관리를 위해 선언된 인터페이스로 필요한 기본 메서드가 선언되어 있음
     - 하위에 List, Set 인터페이스가 있음
 
-    ![image-20200816142627800](..\images\collection.PNG)
+    ![collection](https://user-images.githubusercontent.com/52685243/90327856-ab66f900-dfd2-11ea-9cbb-b42bb2635fb2.PNG)
 
   - Map 인터페이스
 
