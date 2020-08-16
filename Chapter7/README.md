@@ -44,12 +44,9 @@
   - Collection 인터페이스
     - 하나의 객체의 관리를 위해 선언된 인터페이스로 필요한 기본 메서드가 선언되어 있음
     - 하위에 List, Set 인터페이스가 있음
-<<<<<<< HEAD
-=======
 
     ![collection](https://user-images.githubusercontent.com/52685243/90327856-ab66f900-dfd2-11ea-9cbb-b42bb2635fb2.PNG)
 
->>>>>>> 986885f2604859bfe9208b143e54a209515afc25
   - Map 인터페이스
     - 쌍으로 이루어진 객체를 관리하는데 필요한 여러 메서드가 선언되어 있음
     - Map 을 사용하는 객체는 key-value 쌍으로 되어 있고, key 는 중복 불가
