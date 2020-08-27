@@ -41,6 +41,12 @@ public class ThreadTest2 {
 		MyThread2 runner2 = new MyThread2();
 		Thread th2 = new Thread(runner2);
 		th2.start();
+		
+		// 현재 수행중인 thread 를 가져오는 static 메소드
+		// Thread[쓰레드명, 우선순위, 쓰레드가 속한 그룹]
+		Thread t = Thread.currentThread();
+		System.out.println(t);
+		
 		System.out.println("end");
 	}
 }
